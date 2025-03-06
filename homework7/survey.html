@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Survey</title>
+</head>
+
+<body class="survey">
+    <div id="main-cont">
+        <h1>What is your favorite car?</h1>
+        <form id="surveyForm" action="/submit_survey" method="POST">
+            <p>Please select your favorite jdm car:</p>
+
+            <input type="radio" id="supra" name="favorite_car" value="Supra">
+            <label for="supra">Toyota Supra</label><br>
+
+            <input type="radio" id="civic" name="favorite_car" value="Civic">
+            <label for="civic">Honda Civic Type R</label><br>
+
+            <input type="radio" id="skyline" name="favorite_car" value="Skyline">
+            <label for="skyline">Nissan Skyline GT-R</label><br>
+
+            <input type="radio" id="wrx" name="favorite_car" value="WRX">
+            <label for="wrx">Subaru Impreza WRX STI</label><br>
+
+            <input type="radio" id="honda" name="favorite_car" value="Honda">
+            <label for="honda">Honda S2000</label><br>
+
+            <br>
+            <div class="buttons">
+                <input class="btn-survey" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
