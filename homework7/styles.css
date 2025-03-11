@@ -94,3 +94,16 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+/* contact us */
+td {
+    padding: 7px;
+    font-size: 1.2rem;
+}
+
+.contact-back {
+    background-image: url(./images/cherry.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
